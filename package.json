@@ -1,0 +1,27 @@
+{
+  "dependencies": {
+    "chalk": "^5.6.2",
+    "inquirer": "^12.9.6"
+  },
+  "name": "wordcount",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gabrielarappel/WordCount.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gabrielarappel/WordCount/issues"
+  },
+  "homepage": "https://github.com/gabrielarappel/WordCount#readme"
+}
