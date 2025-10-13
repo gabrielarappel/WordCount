@@ -14,8 +14,8 @@ function readFile(path) {
 
 async function wordCount() {
   try {
-    const data = await readFile("madagascar.txt");
-    const words = data.split(/\s+/).filter(Boolean);
+    const data = await readFile("texto.txt");
+    const words = data.split(/[\s-+]/).filter(Boolean);
     console.log(`O arquivo possui ${words.length} palavras.`);
     //console.log("Palavras lidas:", words);
   } catch (err) {
@@ -26,13 +26,13 @@ async function wordCount() {
 wordCount();
 
 //sem async/await - usando callback
-fs.readFile("madagascar.txt", "utf8", (err, data) => {
+fs.readFile("texto.txt", "utf8", (err, data) => {
   if (err) {
     console.error("Erro ao ler o arquivo:", err);
     return;
   }
 
-  const words = data.split(/\s+/).filter(Boolean);
+  const words = data.split(/[\s-+]/).filter(Boolean);
 
   console.log(`O arquivo possui ${words.length} palavras.`);
   //console.log("Palavras lidas:", words);
